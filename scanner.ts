@@ -10,8 +10,6 @@
  *  Decode: Data Matrix
  *  Autofocus
  *
- * URL pour charger l'image: http://172.17.17.50/api/v1/image?decimate=1
- *
  *********************************************************************/
 
 import { YAPI, YErrorMsg, YModule, YFunction, YMeasure } from 'yoctolib-cjs/yocto_api_nodejs.js';
