@@ -1,0 +1,14 @@
+{
+  "name": "Camera-trigger",
+  "author": "Yoctopuce",
+  "description": "Yocto-RangeFinder trigger for OMRON V430-F camera",
+  "scripts": {
+    "scanner": "tsc && node --enable-source-maps scanner.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0"
+  },
+  "dependencies": {
+    "yoctolib-cjs": "^1.10.45343"
+  }
+}
