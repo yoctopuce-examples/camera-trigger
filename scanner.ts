@@ -307,11 +307,11 @@ async function startDemo(): Promise<void>
     // Setup the API to use the VirtualHub on local machine
     let errmsg = new YErrorMsg();
     if (await YAPI.PreregisterHub(RANGEFINDER_IP, errmsg) !== YAPI.SUCCESS) {
-        console.log('Cannot contact YoctoHub-Ethernet on 172.17.17.101: ' + errmsg.msg);
+        console.log('Cannot contact YoctoHub-Ethernet on '+RANGEFINDER_IP+': ' + errmsg.msg);
         return;
     }
     if (await YAPI.PreregisterHub(BUZZER_IP, errmsg) !== YAPI.SUCCESS) {
-        console.log('Cannot contact YoctoHub-Ethernet on 172.17.17.61: ' + errmsg.msg);
+        console.log('Cannot contact YoctoHub-Ethernet on '+BUZZER_IP+': ' + errmsg.msg);
         return;
     }
     handleHotPlug()
